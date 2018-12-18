@@ -10,7 +10,7 @@ public class Calculator {
 		return minuand1 - minuand2;
 	}
 	
-	public int multiplikation(int faktor1, int faktor2) {
+	public double multiplikation(double faktor1, double faktor2) {
 		return faktor1 * faktor2;
 	}
 	
