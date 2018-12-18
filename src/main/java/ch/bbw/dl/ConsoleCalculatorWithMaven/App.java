@@ -1,7 +1,7 @@
 package ch.bbw.dl.ConsoleCalculatorWithMaven;
 
 /**
- * Hello world!
+ * @author Dorian Ljuta
  *
  */
 public class App 
@@ -15,23 +15,23 @@ public class App
         
         System.out.println("Console Calculator");
         System.out.println("==================");
+        System.out.println(valueA + "/" + valueB + "= " + calculator.Summe(valueA, valueB) );
         System.out.println("");
-        System.out.println(calculator.Summe(valueA, valueB));
         
         System.out.println("Console Calculator");
     	System.out.println("==================");
-        System.out.println("");
-    	System.out.println(calculator.subtraction(valueA, valueB));
+    	System.out.println(valueA + "-" + valueB + "= " + calculator.subtraction(valueA, valueB) );
+    	System.out.println("");
     	
     	System.out.println("Console Calculator");
     	System.out.println("==================");
+    	System.out.println(valueA + "*" + valueB + "= " + calculator.multiplikation(valueA, valueB) );;
     	System.out.println("");
-    	System.err.println(calculator.multiplikation(valueA, valueB));
     	
     	System.out.println("Console Calculator");
     	System.out.println("==================");
+    	System.out.println(valueA + "/" + valueB + "= " + calculator.division(valueA, valueB) );
     	System.out.println("");
-    	System.err.println(calculator.division(valueA, valueB));
        
     }
 }
