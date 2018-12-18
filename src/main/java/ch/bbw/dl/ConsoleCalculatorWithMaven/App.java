@@ -16,7 +16,13 @@ public class App
         System.out.println("Console Calculator");
         System.out.println("-------------------");
         System.out.println("");
-        
         System.out.println(calculator.Summe(valueA, valueB));
+        
+        System.out.println("Console Calculator");
+    	System.out.println("==================");
+        System.out.println("");
+    	System.out.println(calculator.subtraction(valueA, valueB));
+        
+       
     }
 }
