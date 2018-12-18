@@ -1,4 +1,4 @@
-package ch.bbw.ConsoleCalculatorWithMaven;
+package ch.bbw.dl.ConsoleCalculatorWithMaven;
 
 /**
  * Hello world!
