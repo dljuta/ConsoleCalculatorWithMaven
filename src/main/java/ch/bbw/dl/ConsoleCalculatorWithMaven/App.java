@@ -27,6 +27,11 @@ public class App
     	System.out.println("==================");
     	System.out.println("");
     	System.err.println(calculator.multiplikation(valueA, valueB));
+    	
+    	System.out.println("Console Calculator");
+    	System.out.println("==================");
+    	System.out.println("");
+    	System.err.println(calculator.division(valueA, valueB));
         
        
     }
