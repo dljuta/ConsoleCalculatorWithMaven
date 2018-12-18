@@ -14,7 +14,7 @@ public class Calculator {
 		return faktor1 * faktor2;
 	}
 	
-	public int division(int divident, int divisor) {
+	public double division(double divident, double divisor) {
 		return divident / divisor;
 	}
 	

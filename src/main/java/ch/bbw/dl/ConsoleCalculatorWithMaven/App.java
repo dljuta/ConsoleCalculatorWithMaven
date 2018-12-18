@@ -14,7 +14,7 @@ public class App
         int valueB = 8;
         
         System.out.println("Console Calculator");
-        System.out.println("-------------------");
+        System.out.println("==================");
         System.out.println("");
         System.out.println(calculator.Summe(valueA, valueB));
         
