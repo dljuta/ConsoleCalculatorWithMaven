@@ -62,4 +62,53 @@ public class CalculatorTest {
 		test = new Calculator();
 		assertTrue(test.Summe(-48, 48) == 0);
 	}
+	
+	//Subtraction
+	
+	@Test
+	public void testSubtraktionZweiPositiveIsOk() {
+		assertTrue(testee.subtraction(25, 9) == 16);
+	}
+	
+	@Test
+	public void testSubtraktionZweiNegativeIsOk() {
+		test = new Calculator();
+		assertTrue(test.subtraction(-10, -11) == -21);
+	}
+	
+	@Test
+	public void testSubtraktionPositivUndNegativeIsOk() {
+		test = new Calculator();
+		assertTrue(test.subtraction(15, -6) == 21);
+	}
+	
+	@Test
+	public void testSubtraktionMaxValueUnd1IsMinValueIsFalse() {
+		test = new Calculator();
+		assertTrue(test.subtraction(Integer.MIN_VALUE, 1) == Integer.MAX_VALUE);
+	}
+	
+	@Test
+	public void testSubtraktionMinValueUndMaxValueIsFalse() {
+		test = new Calculator();
+		assertTrue(test.subtraction(Integer.MIN_VALUE, Integer.MAX_VALUE) == 1);
+	}
+	
+	@Test
+	public void testSubtraktionMaxValueUndZeroIsOk() {
+		test = new Calculator();
+		assertTrue(test.subtraction(Integer.MAX_VALUE, 0) == 2073926091);
+	}
+	
+	@Test
+	public void testSubtraktionMinValueUndZeroIsOk() {
+		test = new Calculator();
+		assertTrue(test.subtraction(Integer.MIN_VALUE, 0) == -2073926091);
+	}
+	
+	@Test
+	public void testSubtraktionZeroIsOk() {
+		test = new Calculator();
+		assertTrue(test.subtraction(18, 18) == 0);
+	}
 }
