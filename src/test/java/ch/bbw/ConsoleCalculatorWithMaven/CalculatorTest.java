@@ -18,7 +18,7 @@ public class CalculatorTest {
 	
 	public void testSummeZweiPositiveIsOk() {
 		testee = new Calculator();
-		assertTrue(testee.Summe(12, 8) == 20);
+		assertTrue(testee.Summe(12, 10) == 22);
 	}
 	
 	@Test
