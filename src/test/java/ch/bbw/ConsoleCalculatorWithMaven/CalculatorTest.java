@@ -116,7 +116,7 @@ public class CalculatorTest {
 	
 	@Test
 	public void testMultiplikationZweiPositiveIsOk() {
-		assertTrue(testee.multiplikation(8, 7) == 57);
+		assertTrue(testee.multiplikation(8, 7) == 56);
 	}
 	
 	@Test
@@ -147,5 +147,55 @@ public class CalculatorTest {
 	public void testMultiplikation0Und0IsOk() {
 		test = new Calculator();
 		assertTrue(test.multiplikation(0, 0) == 0);
+	}
+	
+	//Division
+	
+	@Test
+	public void testDivisionZweiPositiveIsOk() {
+		assertTrue(testee.division(25, 5) == 5);
+	}
+	
+	@Test
+	public void testDivisionZweiNegativeIsOk() {
+		test = new Calculator();
+		assertTrue(test.division(-15, -3) == 5);
+	}
+	
+	@Test
+	public void testDivisionPositivUndNegativeIsOk() {
+		test = new Calculator();
+		assertTrue(test.division(12, -3) == -4);
+	}
+	
+	@Test
+	public void testDivisionNegativUndPositivIsOk() {
+		test = new Calculator();
+		assertTrue(test.division(-10, 5) == -2);
+	}
+	
+	@Test
+	public void testDivisionZweiGleicheZahlenIsOk() {
+		test = new Calculator();
+		assertTrue(test.division(19, 19) == 1);
+	}
+	
+	@Test
+	public void testDivisionDurch0IsFalse() throws ArithmeticException {
+		test = new Calculator();
+		assertTrue(test.division(13, 0) == 0);
+	}
+	
+	@Test
+	public void testDivision0DurchDividisorIsOk() {
+
+		test = new Calculator();
+		assertTrue(test.division(0, 12) == 0);
+	}
+	
+	@Test
+	public void testDivisionMaxValueUnd1IsOk() {
+		test = new Calculator();
+		assertTrue(test.division(Integer.MIN_VALUE, 1) == Integer.MIN_VALUE);
 	}
 }
