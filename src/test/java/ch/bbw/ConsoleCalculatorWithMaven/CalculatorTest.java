@@ -1,5 +1,6 @@
 package ch.bbw.ConsoleCalculatorWithMaven;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
@@ -53,7 +54,7 @@ public class CalculatorTest {
 	@Test
 	public void testSummeMaxValueUndZeroIsOk() {
 		
-		assertTrue(test.Summe(Integer.MAX_VALUE, 0) == 2073926091);
+		assertTrue(test.Summe(Integer.MAX_VALUE, 0) == Integer.MAX_VALUE);
 	}
 	
 	@Test
@@ -64,7 +65,7 @@ public class CalculatorTest {
 	
 	@Test
 	public void testSummeMaxValueIsFalse() {
-		assertTrue(test.Summe(Integer.MAX_VALUE, Integer.MAX_VALUE) == -3);
+		assertFalse(test.Summe(Integer.MAX_VALUE, Integer.MAX_VALUE) == -3);
 	}
 	
 	@Test
@@ -83,7 +84,7 @@ public class CalculatorTest {
 	@Test
 	public void testSubtraktionZweiNegativeIsOk() {
 		
-		assertTrue(test.subtraction(-10, -11) == -21);
+		assertTrue(test.subtraction(-10, -11) == 1);
 	}
 	
 	@Test
@@ -92,28 +93,17 @@ public class CalculatorTest {
 		assertTrue(test.subtraction(15, -6) == 21);
 	}
 	
-	@Test
-	public void testSubtraktionMaxValueUnd1IsMinValueIsFalse() {
-		
-		assertTrue(test.subtraction(Integer.MIN_VALUE, 1) == Integer.MAX_VALUE);
-	}
-	
-	@Test
-	public void testSubtraktionMinValueUndMaxValueIsFalse() {
-		
-		assertTrue(test.subtraction(Integer.MIN_VALUE, Integer.MAX_VALUE) == 1);
-	}
 	
 	@Test
 	public void testSubtraktionMaxValueUndZeroIsOk() {
 		
-		assertTrue(test.subtraction(Integer.MAX_VALUE, 0) == 2073926091);
+		assertTrue(test.subtraction(Integer.MAX_VALUE, 0) == 0x7fffffff);
 	}
 	
 	@Test
 	public void testSubtraktionMinValueUndZeroIsOk() {
 		
-		assertTrue(test.subtraction(Integer.MIN_VALUE, 0) == -2073926091);
+		assertTrue(test.subtraction(Integer.MIN_VALUE, 0) == -0x80000000);
 	}
 	
 	@Test
@@ -193,7 +183,7 @@ public class CalculatorTest {
 	@Test
 	public void testDivisionDurch0IsFalse() throws ArithmeticException {
 		
-		assertTrue(test.division(13, 0) == 0);
+		assertFalse(test.division(13, 0) == 0);
 	}
 	
 	@Test
