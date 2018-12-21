@@ -5,7 +5,6 @@ deploy:
   provider: releases
   api_key:
     secure: h9A+whB7J/isgCgY1VEDFqqf/fdDUqXDFZ+P7cClkQ55esTyuBs7QPIrrdG/JyTBHTfxr5FvEqxKz5D/8g7ZbFNr+h9+HLVv4j0GVPU5vrS4es18dC1zql57nEJNsy9e9WXxQi/f3I3FLTTBWqu1bNqXmVkOVUL/6ty2XCMBhnCOp+0BzsEP4T1wd5OIft0SfYMGWMTz4ALy3HfmGfy8NXcT+f/lLBlnU8s5MhxZ0ksaxIiWtrrYvX94SxSipA3QnZNCyiI+OgmtUj2AnopDWC+nrUmJCrD50153OwkoBt/3PsDUc4TOu8ZYPuE0A4sZEI6776Caui58SgPLTMieti/3C8T66HqvNNeKX02w0hczxF/iVUQ0PBpENcg9W10dHXZopDB00B9nm163UZ8FoMNcJdZt0hSrG6DH/LWLCMYj95ml7NPCj9CbOaSs54/A83XN8Jbg4EjoxocEe1xoZ77t0P4Mps3tSU25B2Mz8pU/URH/MigyPH1dmybvWe8FmIk6ab0FgxYhgXlN1RJ8HhDfpD9Obk+OxnBhuzitLb0u0MrrARIdkTKOBaJRmCvTIz9DnsS6lOIes9bWIrltxPCgGU0bhZ2y+kIAUEGhtWH5U1CjemGuMQ5h27jA9WYtPPghh+YZjUTp9UjSxwVMTaPuh0PCW3x46yOMPK58ilM=
-  file: "/home/travis/.m2/repository/ch/bbw/02_ConsoleCalculatorWithMaven/0.0.1-
-SNAPSHOT/02_ConsoleCalculatorWithMaven-0.0.1-SNAPSHOT.jar"
+  file: "/home/travis/.m2/repository/ch/bbw/02_ConsoleCalculatorWithMaven/0.0.1-SNAPSHOT/02_ConsoleCalculatorWithMaven-0.0.1-SNAPSHOT.jar"
   on:
     repo: dljuta/ConsoleCalculatorWithMaven
